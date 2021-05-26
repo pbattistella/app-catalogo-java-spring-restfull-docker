@@ -1,6 +1,6 @@
 package br.com.sistemas.catalago.controller;
 
-import br.com.sistemas.catalago.Service.PedidoServiceImpl;
+import br.com.sistemas.catalago.service.PedidoServiceImpl;
 import br.com.sistemas.catalago.exception.PedidoNotFoundException;
 import br.com.sistemas.catalago.model.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;

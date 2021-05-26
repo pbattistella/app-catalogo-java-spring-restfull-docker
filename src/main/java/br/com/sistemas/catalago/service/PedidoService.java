@@ -1,4 +1,4 @@
-package br.com.sistemas.catalago.Service;
+package br.com.sistemas.catalago.service;
 
 import br.com.sistemas.catalago.model.Pedido;
 

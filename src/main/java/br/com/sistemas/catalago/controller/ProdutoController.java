@@ -1,6 +1,6 @@
 package br.com.sistemas.catalago.controller;
 
-import br.com.sistemas.catalago.Service.ProdutoServiceImpl;
+import br.com.sistemas.catalago.service.ProdutoServiceImpl;
 import br.com.sistemas.catalago.exception.ProdutoNotFoundException;
 import br.com.sistemas.catalago.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
