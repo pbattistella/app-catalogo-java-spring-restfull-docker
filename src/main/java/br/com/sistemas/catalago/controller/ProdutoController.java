@@ -15,15 +15,15 @@ public class ProdutoController {
     @Autowired
     ProdutoServiceImpl produtoService;
 
+    @GetMapping(value = "/", produces = "application/json")
+    public List<Produto> getProdutos(){
+        return produtoService.findAll();
+    }
+
     @GetMapping(value = "/{id}", produces = "application/json")
     public Produto getProduto(@PathVariable Long id){
         return produtoService.findById(id)
                 .orElseThrow(()-> new ProdutoNotFoundException(id));
-    }
-
-    @GetMapping(value = "/", produces = "application/json")
-    public List<Produto> getProdutos(){
-        return produtoService.findAll();
     }
 
     @PostMapping(value = "/", produces = "application/json")
@@ -50,6 +50,4 @@ public class ProdutoController {
     public void deleteProduto(@PathVariable Long id){
         produtoService.delete(id);
     }
-
-
 }

@@ -26,19 +26,11 @@ public class ProdutoServiceImpl implements ProdutoService{
 
     @Override
     public Produto save(Produto produto) {
-        try{
-            return produtoRepository.save(produto);
-        }catch (Exception e){
-            return null;
-        }
+        return produtoRepository.save(produto);
     }
 
     @Override
     public void delete(Long id) {
-        try{
-            produtoRepository.deleteById(id);
-        }catch (Exception e){
-            System.out.println("Erro ao deletar o produto." + e.getMessage());
-        }
+        produtoRepository.deleteById(id);
     }
 }
